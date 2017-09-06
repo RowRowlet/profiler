@@ -107,13 +107,8 @@
                                                                   <li class="active"><a href="#intro">Home</a></li>
                                                                   <li><a href="#about">About Me</a></li>
 																   <li><a href="#service">Skill</a></li>
-                                                                  <li><a href="#works">Exprience</a></li>				                                                                  
-                                                                  
+                                                                  <li><a href="#works">Exprience</a></li>	
                                                                   <li><a href="#contact">Contact</a></li>
-																  <li class="dropdown nav-toggle">
-                                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropwdown<b class="caret"></b></a>
-                                                                        
-                                                                  </li>
                                                             </ul>
                                                       </div>
                                                       <!-- /.Navbar-collapse -->
@@ -136,8 +131,8 @@
 					<h2 class="h-bold">About</h2>
 					<div class="divider-header"></div>
 					<p>陳妤溱</p>
-					<P>1994年生</P>
 					<p>雲林科技大學，資訊管理系畢</p>
+					<p>覺得生活各處都充滿了介面設計，喜歡觀察各種平台的介面與操作方式</p>
 					</div>
 					</div>
 				</div>
@@ -188,7 +183,7 @@
 				<div class="wow fadeInLeft" data-wow-delay="0.2s">
                 <div class="service-box">
 					<div class="service-icon">
-						<img src="img/icons/webdesign.png" alt="" />
+						<img src="img/icons/webdesign.PNG" alt="" />
 					</div>
 					<div class="service-desc">						
 						<h5>Web Design</h5>
@@ -203,7 +198,7 @@
 				<div class="wow fadeInUp" data-wow-delay="0.2s">
                 <div class="service-box">
 					<div class="service-icon">
-						<img src="img/icons/graphic.png" alt="" />
+						<img src="img/icons/graphic.PNG" alt="" />
 					</div>
 					<div class="service-desc">
 						<h5>Graphic design</h5>
@@ -216,7 +211,7 @@
 				<div class="wow fadeInRight" data-wow-delay="0.2s">
                 <div class="service-box">
 					<div class="service-icon">
-						<img src="img/icons/more.png" alt="" />
+						<img src="img/icons/more.PNG" alt="" />
 					</div>
 					<div class="service-desc">
 						<h5>Other</h5>
@@ -240,7 +235,7 @@
 							<div class="icon">
 								<p>Passion</p>
 							</div>
-						<strong id="counter-coffee" class="number">71</strong><br />
+						<strong id="counter-coffee" class="number">99</strong><br />
 						<span class="text">/100</span>
 						</div>
 					</div>
@@ -249,7 +244,7 @@
 							<div class="icon">
 								<p>Exprience</p>
 							</div>
-						<strong id="counter-music" class="number">61</strong><br />
+						<strong id="counter-music" class="number">71</strong><br />
 						<span class="text">/100</span>
 						</div>
 					</div>
@@ -258,7 +253,7 @@
 							<div class="icon">
 								<p>Communication</p>
 							</div>
-						<strong id="counter-clock" class="number">61</strong><br />
+						<strong id="counter-clock" class="number">71</strong><br />
 						<span class="text">/100</span>
 						</div>
 					</div>
@@ -296,11 +291,10 @@
             <div class="col-xs-6 col-sm-3 col-md-3">				
 				<div class="team-wrapper-big wow bounceInUp" data-wow-delay="0.2s">
                         <div class="team-wrapper-overlay">
-                          <h5>案場資訊整合</h5>
-                          <p>大學的畢業專題，負責前端畫面的設計</p> 
+                          <h5>案場資訊整合</h5> 
 						   <div class="social-icons">
 								<ul class="team-social">
-									<li><a id = 'a1' href="javascript:;" onclick="change()">Click!</a></li>									
+									<li><a id = 'a1' href="javascript:;" onclick="change_d1(false)">Click!</a></li>									
 								</ul>
                           </div>                         
                         </div>
@@ -312,7 +306,11 @@
 				<div class="team-wrapper-big wow bounceInUp" data-wow-delay="0.5s">
                         <div class="team-wrapper-overlay">
                           <h5>小額採購平台</h5>
-                          <p>大學與同學共同接案</p>
+                          <div class="social-icons">
+								<ul class="team-social">
+									<li><a id = 'a2' href="javascript:;" onclick="change_d2(false)">Click!</a></li>									
+								</ul>
+                          </div>
                         </div>
                         <img src="img/team/ex2.jpg" alt="" />
                 </div>
@@ -321,7 +319,11 @@
 				<div class="team-wrapper-big wow bounceInUp" data-wow-delay="0.8s">
                         <div class="team-wrapper-overlay">
                           <h5>鼎新電腦</h5>
-                          <p>大四下進入鼎新電腦實習</br>BPM服務工程師</p>
+                          <div class="social-icons">
+								<ul class="team-social">
+									<li><a id = 'a3' href="javascript:;" onclick="change_d3(false)">Click!</a></li>									
+								</ul>
+                          </div>
                         </div>
                         <img src="img/team/ex3.jpg" alt="" />
                 </div>
@@ -335,38 +337,37 @@
                         <img src="img/team/ex4.jpg" alt="" />
                 </div>
             </div>
+			
+        </div>
+		<div class="container">		
 			<div class="EXP" id="d1" style="display: none">
 			 <h5>案場資訊整合</h5>
 			 <p>大學時的畢業專題，與天泰能源產學合作</p>
-			 <p>天泰能源為一個管理太陽能電廠的公司，公司的需求為架設一個可以總覽各個案場的網頁，並且可以在各裝置上瀏覽</p>
-			 
+			 <p>天泰能源為一個管理太陽能電廠的公司，公司的需求為以ASP.net架設，並與MYSQL連結架設一個可以總覽各個案場的網頁，並且可以在各裝置上瀏覽</p>
+			 <p>而我負責的部分為網頁的介面，以及調整自適應的設定。為了RWD的需求，這次的開發套用的bootstrap樣版</p>
+			 <p>與廠商一次又一次的開會、修改，最後交出符合客戶需求的網頁</p>
+			 <img src="img/team/exp1.PNG" alt=""/>
 			</div>
-        </div>		
-		
+
+			<div class="EXP" id="d2" style="display: none">
+			 <h5>小額採購平台</h5>
+			 <p>大學時與同學一起協助斗六市公所架設，提供公所人員內部使用的採購平台</p>
+			 <p>根據客戶提供的採購項目，規劃出一個線上填寫採購單的平台，不須透過紙本就能申請採購</p>
+			 <img src="img/team/exp2.PNG" alt=""/>
+			</div>
+
+			<div class="EXP" id="d3" style="display: none">
+			 <h5>鼎新電腦</h5>
+			 <P>從大四下就</P>
+			</div>
+
+			<div class="CloseDiv" id="CloseDiv" style="display: none">
+			 <a href="javascript:;" onclick="CloseDiv()">Close</a>
+			</div>
+		</div>
  		
 
-	<section id="parallax3" class="home-section parallax text-light text-center" data-stellar-background-ratio="0.5">	
-           <div class="container"  >
-				<div class="row">
-					<div class="col-md-12">
-						<div class="testimonialslide clearfix flexslider" >
-							<ul class="slides">
-								<li><blockquote>
-									stay hungry stay foolish
-									</blockquote>
-									<h4>Steve Jobs</h4> 
-								</li>
-								<li><blockquote>
-								There are two way to be happy: lower you expectations, or improve your reality. -yes man
-								</blockquote>
-									<h4><i>Movie "yes man"</i> </h4>
-								</li>	
-							</ul>
-						</div>					
-					</div>	
-				</div>
-            </div>
-	</section>	
+	
 	
 
 
@@ -377,7 +378,7 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
 					<div class="section-heading text-center">
-					<h2 class="h-bold">Contact us</h2>
+					<h2 class="h-bold">Contact me</h2>
 					<div class="divider-header"></div>
 					<p>Email: chen29859718@gmail.com</p>
 					<p>或是在以下表單填寫資訊</p>
@@ -390,7 +391,7 @@
 		</div>
 		<div class="container">
 
-			<div><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGajM1mAmcGME0Xg9_FCyGJRhKmN7Y4Qw7CStyq_G3V7eFMQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+			<div><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGajM1mAmcGME0Xg9_FCyGJRhKmN7Y4Qw7CStyq_G3V7eFMQ/viewform?embedded=true" width="auto" height="500" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
 			</div></div>
 		
 		

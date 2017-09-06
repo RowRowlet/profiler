@@ -12,7 +12,6 @@
 @import url('pe-icon-7-stroke.css');
 @import url('helper.css');
 
-@import "compass/css3";
 
 body {
     width: 100%;
@@ -44,6 +43,7 @@ h4 {
 }
 h5 {
 	font-size: 24px;
+	font-family: 'Lato',Microsoft JhengHei;
 }
 h6 {
 	font-size: 20px;
@@ -56,7 +56,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato',Microsoft JhengHei;
     font-weight: 400;
 	color: #111;
 }
@@ -1833,7 +1833,7 @@ a.btn:focus{
 }
 @media (max-width:768px) {
 	#navigation {
-		padding: 20px 0;
+		padding: 10px 0;
 	}
 	.site-logo{
 		margin: 0 0 0 30px;
@@ -1847,7 +1847,7 @@ a.btn:focus{
 
 	}
 	.navbar-header {
-		margin-top:-40px;
+		margin-top:0px;
 		padding:0;
 	}
 	.navbar-header button {
@@ -1910,5 +1910,6 @@ a.btn:focus{
 
 
 .EXP{
-	margin-top:10px;
+	padding-top: 3%;
+
 }
