@@ -687,19 +687,15 @@ hr.bold {
 ============================ */
 .service-box {
 	background: #f9f9f9;
-	padding: 20px;
 }
 
 .service-icon {
 	margin-bottom: 20px;
-	
-}	
-/*
-#service{	
-	background-image: url(../img/img-service.jpg);
+	width:100%;
 }
-
-*/
+.service-img{
+	width:90%;
+}	
 
 /* ===========================
 --- Team
