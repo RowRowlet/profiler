@@ -1,27 +1,34 @@
 body{
     font-family: Arial,Microsoft JhengHei;
 }
-.InfoFooter{
-    margin-top:10px;
-    padding:5%;
-    background: #E3D9CA;
-    color:#Ffffff;
-}
-.card-deck{
-    margin-top:20px;
-}
 h4{
     color:#6A0000;
 }
 h6{
     color:#E16428;
 }
+.InfoA{
+    color:#363333;
+}
+/*燈箱 */
 .lightbox{
     margin:3%;
     padding:5px;
     color:#363333;
     border:solid 1px #DCE8BA;
 }
+/*商品種類標題 */
 .type{
     margin-top:30px;
+}
+/*底部資訊欄 */
+.InfoFooter{
+    margin-top:10px;
+    padding:5%;
+    background: #E3D9CA;
+    color:#363333;
+}
+/*商品卡片 */
+.card-deck{
+    margin-top:20px;
 }
